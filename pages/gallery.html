@@ -8,9 +8,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
     <title>Gallery | Hollow Knight: Silksong</title>
     <link rel="stylesheet" href="../css/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="../scripts/add-footer.js"></script>
+    <script src="../scripts/gallery-viewer.js"></script>
 </head>
 <body>
+    <div class="image-viewer">
+        <span class="close-viewer">&times;</span>
+        <img class="viewer-image" src="" alt="">
+    </div>
     <header>
     <div class="overlay"></div>
         <nav>
@@ -129,7 +135,6 @@
 
         </section>
     </main>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="../scripts/slide-gallery.js"></script>
     <script src="../scripts/gallery-filter.js"></script>
     <!-- Footer at footer.html -->

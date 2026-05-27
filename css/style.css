@@ -547,3 +547,67 @@ footer p{
     }
 
 }
+
+.image-viewer{
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,0.92);
+
+    display:none;
+
+    justify-content:center;
+    align-items:center;
+
+    z-index:99999;
+
+    padding:40px;
+}
+
+.viewer-image{
+    max-width:90%;
+    max-height:90vh;
+
+    border-radius:10px;
+
+    box-shadow:
+    0 0 40px rgba(255,255,255,0.08);
+
+    animation:viewerFade 0.3s ease;
+}
+
+.close-viewer{
+    position:absolute;
+
+    top:30px;
+    right:40px;
+
+    font-size:3rem;
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+.close-viewer:hover{
+    transform:scale(1.1);
+
+    opacity:0.7;
+}
+
+@keyframes viewerFade{
+
+    from{
+        opacity:0;
+        transform:scale(0.95);
+    }
+
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
+
+}
