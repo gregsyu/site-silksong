@@ -1,6 +1,6 @@
-<p align="center">
+<a href="https://gregsyu.github.io/site-silksong/"><p align="center">
     <img src="images/logo.png">
-</p>
+</p></a>
 
 ---
 
