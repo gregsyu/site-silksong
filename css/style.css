@@ -611,3 +611,218 @@ footer p{
     }
 
 }
+
+.lore-header{
+    position:relative;
+
+    min-height:75vh;
+
+    overflow:hidden;
+
+    background:
+    linear-gradient(
+        to bottom,
+        rgba(0,0,0,0.85),
+        rgba(20,0,0,0.55)
+    );
+}
+
+.lore-hero{
+    position:relative;
+
+    z-index:5;
+
+    min-height:75vh;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    padding:0 20px;
+}
+
+.lore-hero h1{
+    font-size:6rem;
+
+    letter-spacing:10px;
+
+    margin-bottom:30px;
+
+    text-shadow:
+    0 0 30px rgba(255,255,255,0.15);
+}
+
+.lore-hero p{
+    max-width:700px;
+
+    font-size:1.1rem;
+
+    line-height:2;
+
+    color:#d3d3d3;
+}
+
+.lore-main{
+    width:100%;
+}
+
+.lore-section{
+    display:flex;
+
+    align-items:center;
+
+    gap:80px;
+
+    padding:120px 10%;
+
+    flex-wrap:wrap;
+}
+
+.lore-section.reverse{
+    flex-direction:row-reverse;
+}
+
+.lore-text{
+    flex:1;
+
+    min-width:320px;
+}
+
+.section-subtitle{
+    display:block;
+
+    color:#b44;
+
+    letter-spacing:3px;
+
+    margin-bottom:20px;
+
+    text-transform:uppercase;
+
+    font-size:0.85rem;
+}
+
+.lore-text h2{
+    font-size:3rem;
+
+    margin-bottom:35px;
+
+    line-height:1.2;
+}
+
+.lore-text p{
+    color:#c9c9c9;
+
+    line-height:2;
+
+    margin-bottom:25px;
+}
+
+.lore-image{
+    flex:1;
+
+    min-width:320px;
+}
+
+.lore-image img{
+    width:100%;
+
+    border-radius:12px;
+
+    display:block;
+
+    box-shadow:
+    0 0 40px rgba(255,255,255,0.05);
+}
+
+.lore-full{
+    position:relative;
+
+    min-height:70vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    overflow:hidden;
+
+    background:
+    url('../images/gallery/scenarios/09a_peak.png')
+    center/cover;
+}
+
+.lore-full-overlay{
+    position:absolute;
+    inset:0;
+
+    background:
+    linear-gradient(
+        to bottom,
+        rgba(0,0,0,0.8),
+        rgba(0,0,0,0.45),
+        rgba(0,0,0,0.9)
+    );
+}
+
+.lore-full-content{
+    position:relative;
+
+    z-index:5;
+
+    width:90%;
+
+    max-width:850px;
+}
+
+.lore-full-content h2{
+    font-size:4rem;
+
+    margin:30px 0;
+}
+
+.lore-full-content p{
+    line-height:2;
+
+    color:#d0d0d0;
+}
+
+.lore-ending{
+    padding-left: 20px;
+    margin-top: 100px;
+    text-align:center;
+}
+
+.lore-ending h2{
+    font-size:3rem;
+
+    margin-bottom:30px;
+}
+
+.lore-ending p{
+    color:#c8c8c8;
+}
+
+@media(max-width:900px){
+
+    .lore-hero h1{
+        font-size:3rem;
+    }
+
+    .lore-text h2{
+        font-size:2rem;
+    }
+
+    .lore-full-content h2{
+        font-size:2.5rem;
+    }
+
+    .lore-section{
+        padding:80px 20px;
+    }
+
+}
