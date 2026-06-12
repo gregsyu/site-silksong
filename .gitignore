@@ -1,16 +1,8 @@
 *.backup
 
-logs
-*.log
-
 .DS_Store
 
 /.idea
-.project
-.classpath
-.c9/
-*.launch
-.settings/
 *.sublime-workspace
 
 .vscode/*
@@ -18,13 +10,3 @@ logs
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
-
-.temp
-.tmp
-
-pids
-*.pid
-*.seed
-*.pid.lock
-
-report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
