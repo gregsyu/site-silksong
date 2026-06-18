@@ -11,7 +11,11 @@ body {
     overflow-x: hidden;
 }
 
-a { text-decoration: none; color: white; }
+a {
+    text-decoration: none;
+    color: white;
+}
+
 ul { list-style: none; }
 
 header { position: relative; width: 100%; overflow: hidden; }
@@ -83,15 +87,22 @@ nav a:not(#team-cherry-logo):hover::after { width: 100%; }
     text-align: center;
     padding: 20px;
 }
-.characters-header{
+
+.characters-header {
     position:relative;
     min-height:75vh;
     overflow:hidden;
     background: linear-gradient( to bottom, rgba(0,0,0,0.92), rgba(40,0,0,0.5));
 }
 
-.hero-content { height: calc(100vh - 100px); }
-.page-title { flex: 1; padding: 40px 20px; }
+.hero-content {
+    height: calc(100vh - 100px);
+}
+
+.page-title {
+    flex: 1;
+    padding: 40px 20px;
+}
 
 .hero-content h1, .page-title h1, .slider-content h1 {
     font-size: 5rem;
@@ -105,7 +116,10 @@ nav a:not(#team-cherry-logo):hover::after { width: 100%; }
     text-shadow: 0 0 30px rgba(255,255,255,0.12);
 }
 
-.lore-hero h1 { margin-bottom: 30px; }
+.lore-hero h1 {
+    margin-bottom: 30px;
+}
+
 .world-hero h1, .bosses-hero h1, .characters-hero h1 { margin-bottom: 25px; }
 
 .hero-content p, .page-title p, .lore-hero p, .world-hero p, .bosses-hero p, .characters-hero p {
@@ -115,6 +129,7 @@ nav a:not(#team-cherry-logo):hover::after { width: 100%; }
     line-height:1.8;
     color:#d3d3d3;
 }
+
 .hero-btn {
     margin-top: 40px;
     padding: 14px 36px;
@@ -150,7 +165,9 @@ main { padding: 120px 12%; }
     margin-bottom: 25px;
     font-size: 1rem;
 }
+
 .gallery-main { padding: 50px 10%; }
+
 .gallery-filters {
     display: flex;
     justify-content: center;
@@ -158,6 +175,7 @@ main { padding: 120px 12%; }
     flex-wrap: wrap;
     margin-bottom: 70px;
 }
+
 .filter-btn {
     padding: 12px 28px;
     background: transparent;
@@ -166,22 +184,26 @@ main { padding: 120px 12%; }
     cursor: pointer;
     transition: 0.3s;
 }
+
 .filter-btn:hover,
 .filter-btn.active {
     background: rgba(255,255,255,0.08);
     border-color: rgba(255,255,255,0.3);
 }
+
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 30px;
 }
+
 .gallery-item {
     overflow: hidden;
     border-radius: 12px;
     background: #111;
     transition: 0.4s;
 }
+
 .gallery-item img {
     width: 100%;
     height: 100%;
@@ -189,11 +211,14 @@ main { padding: 120px 12%; }
     object-fit: cover;
     transition: 0.5s;
 }
+
 .gallery-item:hover {
     transform: translateY(-6px);
     box-shadow: 0 0 30px rgba(255,255,255,0.08);
 }
+
 .gallery-item:hover img { transform: scale(1.05); }
+
 .gallery-slider {
     position: relative;
     width: 100%;
@@ -201,7 +226,9 @@ main { padding: 120px 12%; }
     overflow: hidden;
     margin-top: -120px;
 }
+
 .slides { width: 100%; height: 100%; }
+
 .slide {
     position: absolute;
     inset: 0;
@@ -212,10 +239,12 @@ main { padding: 120px 12%; }
     transition: opacity 1.5s ease, transform 6s ease;
     z-index: 1;
 }
+
 .slide.active {
     opacity: 1;
     transform: scale(1);
 }
+
 .slider-content {
     position: absolute;
     top: 50%; left: 50%;
@@ -224,11 +253,13 @@ main { padding: 120px 12%; }
     text-align: center;
     width: 90%;
 }
+
 .slider-content p {
     color: #d0d0d0;
     font-size: 1.1rem;
     letter-spacing: 1px;
 }
+
 .image-viewer {
     position: fixed;
     inset: 0;
@@ -239,6 +270,7 @@ main { padding: 120px 12%; }
     z-index: 99999;
     padding: 40px;
 }
+
 .viewer-image {
     max-width: 90%;
     max-height: 90vh;
@@ -246,6 +278,7 @@ main { padding: 120px 12%; }
     box-shadow: 0 0 40px rgba(255,255,255,0.08);
     animation: viewerFade 0.3s ease;
 }
+
 .close-viewer {
     position: absolute;
     top: 30px;
@@ -255,6 +288,7 @@ main { padding: 120px 12%; }
     cursor: pointer;
     transition: 0.3s;
 }
+
 .close-viewer:hover {
     transform: scale(1.1);
     opacity: 0.7;
@@ -272,14 +306,17 @@ main { padding: 120px 12%; }
     padding: 120px 10%;
     flex-wrap: wrap;
 }
+
 .world-section.reverse, .boss-section.reverse, .character-section.reverse, .lore-section.reverse {
     flex-direction: row-reverse;
 }
+
 .world-image, .boss-image, .character-image, .lore-image,
 .world-text, .boss-text, .character-text, .lore-text {
     flex: 1;
     min-width: 320px;
 }
+
 .world-image img, .boss-image img, .character-image img, .lore-image img {
     width: 100%;
     border-radius: 14px;
@@ -287,19 +324,26 @@ main { padding: 120px 12%; }
     transition: 0.5s;
     box-shadow: 0 0 40px rgba(255,255,255,0.05);
 }
+
 .world-image img:hover, .boss-image img:hover, .character-image img:hover {
     transform: scale(1.02);
 }
+
 .lore-text h2, .world-text h2, .boss-text h2, .character-text h2 {
     font-size: 3rem;
     margin-bottom: 30px;
 }
+
 .lore-text p, .world-text p, .boss-text p, .character-text p {
     color: #c9c9c9;
     line-height: 2;
     margin-bottom: 25px;
 }
-.section-subtitle { text-transform: uppercase; }
+
+.section-subtitle {
+    text-transform: uppercase;
+}
+
 .world-number, .boss-number, .character-number, .section-subtitle {
     display: block;
     margin-bottom: 20px;
@@ -307,6 +351,7 @@ main { padding: 120px 12%; }
     letter-spacing: 4px;
     font-size: .9rem;
 }
+
 .lore-full {
     position: relative;
     min-height: 70vh;
@@ -317,16 +362,19 @@ main { padding: 120px 12%; }
     overflow: hidden;
     background: url('../images/gallery/scenarios/09a_peak.png') center/cover;
 }
+
 .lore-full-content {
     position: relative;
     z-index: 5;
     width: 90%;
     max-width: 850px;
 }
+
 .lore-full-content h2 {
     font-size: 4rem;
     margin: 30px 0;
 }
+
 .lore-full-content p, .world-final-content p, .boss-final-content p, .characters-final-content p {
     line-height: 2;
     color: #d0d0d0;
@@ -343,32 +391,39 @@ main { padding: 120px 12%; }
     padding: 120px 20px;
     background: linear-gradient(to bottom, #050505, #140000);
 }
+
 .world-final-overlay, .boss-final-overlay, .characters-final-overlay {
     position: absolute;
     inset: 0;
     background: radial-gradient(circle at center, rgba(120,0,0,0.2), transparent 70%);
 }
+
 .world-final-content, .boss-final-content, .characters-final-content {
     position: relative;
     z-index: 5;
     max-width: 1000px;
 }
+
 .world-final-content h2, .boss-final-content h2, .characters-final-content h2 {
     font-size: 5rem;
     margin: 30px 0;
 }
+
 .world-final-content img, .boss-final-content img, .characters-final-content img {
     width: 100%;
     margin-top: 50px;
     border-radius: 14px;
     box-shadow: 0 0 60px rgba(255,255,255,0.05);
 }
+
 .trailer-container { margin-top: 80px; }
+
 .trailer-container h3 {
     margin-bottom: 25px;
     font-size: 2rem;
     letter-spacing: 2px;
 }
+
 .trailer-container iframe {
     width: 100%;
     max-width: 1000px;
@@ -377,16 +432,19 @@ main { padding: 120px 12%; }
     border-radius: 12px;
     box-shadow: 0 0 40px rgba(255,255,255,0.08);
 }
+
 .platforms {
     padding-left: 10px;
     margin-top: 100px;
     text-align: center;
 }
+
 .platforms h2 {
     font-size: 2rem;
     margin-bottom: 50px;
     letter-spacing: 2px;
 }
+
 .platform-logos {
     display: flex;
     justify-content: center;
@@ -394,12 +452,14 @@ main { padding: 120px 12%; }
     gap: 60px;
     flex-wrap: wrap;
 }
+
 .platform-logos img {
     height: 120px;
     width: auto;
     opacity: 0.9;
     transition: 0.3s;
 }
+
 .platform-logos img:hover {
     opacity: 1;
     transform: translateY(-5px);
@@ -421,32 +481,41 @@ footer p {
     display: flex;
     gap: 25px;
 }
+
 .footer-links a {
     color: #FFFF;
     transition: 0.3s;
 }
+
 .footer-links a:hover { color: rgb(193, 193, 193); }
+
 .lore-ending {
     padding-left: 20px;
     margin-top: 100px;
     text-align: center;
 }
+
 .lore-ending h2 {
     font-size: 3rem;
     margin-bottom: 30px;
 }
+
 .lore-ending p { color: #c8c8c8; }
+
 .characters-intro p, .bosses-intro p, .world-text p, .world-intro p, .page-title p {
     color: #cfcfcf;
 }
+
 .bosses-intro, .world-intro, .characters-intro{
     text-align:center;
     padding:120px 20px 80px;
 }
+
 .bosses-intro h2, .world-intro h2, .characters-intro h2{
     font-size:3rem;
     margin-bottom:30px;
 }
+
 .bosses-intro p, .world-intro p, .characters-intro p {
     max-width:800px;
     margin:auto;
